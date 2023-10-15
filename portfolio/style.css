@@ -1,0 +1,321 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;1,200&family=Ubuntu&family=Varela+Round&display=swap');
+*{
+    margin: none;
+}
+header {
+    background-color: #0b0c0c;
+    color: #fff;
+    padding: 10px 0;
+    position: fixed; /* Make the header sticky */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Ensure it's above other content */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Styling for the title on the left */
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+/* Styling for the navigation links on the right */
+.nav {
+    list-style: none;
+    display: flex;
+    margin-right: 20px;
+}
+
+.nav li {
+    margin-left: 20px;
+}
+
+.nav a {
+    text-decoration: none;
+    color:rgb(204,11,246);
+}
+/* about section */
+#about .name{
+    color: #f5860e;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 1px solid #f5860e;
+    animation: typing 5s steps(40) 1s infinite;
+}
+#about #content{
+    display: flex;
+    align-items: center;
+    /* padding: 30px; */
+    
+}
+#about #content p{
+    text-align:start;
+    padding: 2rem;
+    margin-left: 100px;
+    margin-right: 100px;
+    border-radius: 20px;
+    
+}
+#img{
+    display: flex;
+    justify-content: center;
+    margin-right: 10%;
+}
+#about #content img{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    box-shadow:0px 0px 20px rgb(162, 162, 162);
+}
+.socials{
+    max-width: 200px;
+    margin-left: 150px;
+    margin-bottom: 50px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+}
+.social{
+    font-size: 1.5rem;
+    margin-bottom: 0px;
+    transition: all 0.4s;
+    height: 20px;
+    width: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+#git:hover{
+    transform: scale(1.1);
+    box-shadow: 0 0 20px #ffffff;
+}
+#in:hover{
+    transform: scale(1.1);
+    /* color: #0072b1; */
+}
+#insta:hover{
+    transform: scale(1.1);
+    /* color: #C13584;  */
+}
+.hireanddownload{
+    max-width: 330px;
+    margin-left: 150px;
+    display: flex;
+}
+#download{
+    padding: 13px;
+    width: 130px;
+    height: 50px;
+    border-radius: 30px;
+    margin-right: 40px;
+    border: 5px solid rgb(204,11,246);
+    background-color: rgb(227, 149, 245);
+    transition: all 0.4s;
+}
+#download:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgb(227, 149, 245);
+    color: rgb(208, 0, 255);
+    background-color: #f3eff3;
+    font-weight: bolder;
+    cursor: pointer;
+}
+#hire{
+    padding: 13px;
+    height: 50px;
+    width: 130px;
+    border-radius: 30px;
+    border: 5px solid rgb(6, 150, 253);
+    background-color: rgb(142, 224, 251);
+    transition: all 0.4s;
+}
+#hire:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgb(119, 221, 255);
+    color: rgb(6, 150, 253);
+    background-color: #f3eff3;
+    font-weight: bolder;
+    cursor: pointer;
+}
+/* for all contents */
+#content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#content .part2{
+    align-items: flex-start;
+    margin-bottom: 140px;
+}
+/* skill section */
+.skill{
+    width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:1rem 3rem 3rem 1rem;
+    /* border: solid #ffffff; */
+    border-width: 0.01rem;
+    border-radius: 10px;
+    margin:10px;
+    background-color: #232525;
+}
+.skill .icon{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.skill .icon i{
+    font-size: 2rem;
+    color: #ffffff;
+    
+}
+.skill h3{
+    margin-left: 20px;
+}
+.skill p{
+    height: 30px;
+    padding-bottom: 15px;
+    font-size: smaller;
+}
+/* project section */
+#projects .content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.project{
+    height: 200px;
+    width: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:1rem 3rem 3rem 1rem;
+    /* border: solid #ffffff; */
+    border-radius:50px 0 50px 0;
+    border-width: 0.01rem;
+    margin:10px;
+    background-color: #232525;
+}
+.project .icon{
+    height: 50px;
+    width: 50px;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* contact section */
+.details{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* background-color: orange; */
+}
+.detail{
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    max-width:400px ;
+}
+.detail .icon{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: rgb(22, 28, 193);
+    margin-right: 40px;
+    margin-top: 15px;
+    margin-left: 25px;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.detail .text{
+    max-width: 200px;
+}
+footer{
+    display: flex;
+    background-color: rgb(58, 58, 58);
+    overflow: hidden;
+    justify-content: space-around;
+    width: 100%;
+    /* position: ; */
+}
+footer a{
+    display: block;
+    color: antiquewhite;
+    text-decoration: none;
+    padding: 14px 20px;
+    float: left;
+}
+.foot-btn:hover{
+    background-color: white;
+    color: black;
+}
+/* for all headings and sections */
+.section{
+    width: 100%;
+}
+.section h1{
+    text-shadow: 0 0 20px rgb(255, 255, 255);
+}
+/* for all sections */
+body {
+    font-family: 'Poppins', sans-serif;
+    padding-top: 60px;
+    background-color: #0b0c0c;
+    color: #ffffff;
+}
+.section{
+    margin-bottom: 100px;
+}
+/* responsive properties */
+@media screen and (max-width:1200px) {
+    #content{
+        flex-direction: column;
+    }
+    #img{
+        margin: auto;
+    }
+    .hireanddownload,.socials{
+        margin-top: 50px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .hireanddownload{
+        flex-direction: column;
+        align-items: center;
+        width: 130px;
+        height: 150px;
+    }
+    #download{
+        margin-right: 0px;
+        margin-bottom: 30px;
+    }
+}
+@media screen and (max-width:320px){
+    footer{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+/* animation */
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 430px;
+    }
+}
